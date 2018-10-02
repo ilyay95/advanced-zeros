@@ -1,8 +1,7 @@
 module.exports = function getZerosCount(number, base) {
-let  zerosCount, zerosCountArr, result;
+  let  zerosCount, zerosCountArr, result;
   let notation = base;
   let prime = {};
-  let zerosCountArr = [];
 
  	 for (let i = 2; i <= notation; i++) {
   		while (notation % i === 0) {
@@ -23,7 +22,7 @@ let  zerosCount, zerosCountArr, result;
 		}
 	 	return Math.floor(zerosCount/count);	
 	}
-	
+	zerosCountArr = [];
 		for(let key in prime){
 			zerosCountArr.push(zerosByPrime(number, +key, prime[key]));
 		}
